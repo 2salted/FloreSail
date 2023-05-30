@@ -1,0 +1,154 @@
+/* reset default margin and padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* set default font family and size */
+  body {
+	font-family: verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  header a img {
+	position: absolute;
+    left: 0;
+    top: 0;
+	display: block;
+    height: 140px;
+    width: 100px;
+  }
+  /* style header */
+  header {
+	background-image: url('Headerimage.png');
+    background-size: cover;
+    background-position: center;
+	height: 260px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 130px;
+  }
+  
+  /* style navigation */
+  nav {
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #ccc;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+  }
+  
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+  }
+  
+  nav li {
+	float: none;
+	display: inline-block;
+  }
+  
+  nav li a {
+	font-family: verdana;
+	display: block;
+	color: #333;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  nav li a:hover {
+	background-color: #ddd;
+  }
+  
+  /* style main content */
+  main {
+	padding: 20px;
+  }
+  main section h2 {
+	position: relative;
+	top: 65px;
+	text-align: center;
+  }
+  section {
+	margin-bottom: 20px;
+	padding-bottom: 150px;
+  }
+  section h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  section p {
+	line-height: 1.6;
+  }
+  /* style footer */
+  footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+  }
+
+  /* responsive styles */
+  @media screen and (max-width: 768px) {
+	/* reduce padding on main content */
+	header{
+		padding: 30px;
+		height: 300px;
+	}
+	main {
+	  padding: 10px;
+	}
+	
+	/* center text in navigation */
+	nav ul {
+	  text-align: center;
+	}
+	/* make navigation links stack vertically */
+	nav li {
+	  float: none;
+	  display: inline-block;
+	}
+	/* reduce padding on navigation links */
+	nav li a {
+	  padding: 12px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	/* reduce font size on header */
+	header {
+	  background-image: url(headerimagemobile.png);
+	  font-size: 18px;
+	  height: 310px;
+	}
+	header a img {
+		height: 110px;
+		width: 80px;
+	}
+	/* reduce font size on section headings */
+	section h2 {
+	  font-size: 20px;
+	}
+	
+	/* reduce font size on navigation links */
+	nav li a {
+	  font-size: 14px;
+	}
+
+	/* reduce padding on navigation links */
+	nav li a {
+	  padding: 12px;
+	}
+
+	/* center text in footer */
+	footer {
+	  text-align: center;
+	}
+  }
+  
