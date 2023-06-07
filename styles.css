@@ -725,16 +725,23 @@ div .WhatsApp {
 	}
   }
   #pricing-text {
+	color: #5fa8bc;
 	text-align: center;
   }
   #paraprice-text {
+	color: #5fbca2;
 	text-align: center;
   }
   #booking-text {
+	color: #5fa8bc;
 	margin-top: 80px;
 	text-align: center;
   }
   #parabooking-text {
+	color: #5fbca2;
 	text-align: center;
 	margin-bottom: 25px;
+  }
+  #cleanup-text {
+	text-align: center;
   }
