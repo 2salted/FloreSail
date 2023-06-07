@@ -730,3 +730,11 @@ div .WhatsApp {
   #paraprice-text {
 	text-align: center;
   }
+  #booking-text {
+	margin-top: 80px;
+	text-align: center;
+  }
+  #parabooking-text {
+	text-align: center;
+	margin-bottom: 25px;
+  }
