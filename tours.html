@@ -134,7 +134,8 @@ select::placeholder {
 		  <thead>
 			<tr>
 			  <th>PLAN/OPTIONS</th>
-			  <th>Full day sunset plan</th>
+			  <th>Sunset plan</th>
+			  <th>Full Day plan</th>
 			  <th>Flores & Corvo plan</th>
 			  <th>Customizable plan</th>
 			</tr>
@@ -142,6 +143,7 @@ select::placeholder {
 		  <tbody>
 			<tr>
 			  <td>Duration</td>
+			  <td>4 Hours</td>
 			  <td>1 Full Day</td>
 			  <td>1-2 Full Days</td>
 			  <td>1-3 Full Days</td>
@@ -151,9 +153,11 @@ select::placeholder {
 				<td>5 person max</td>
 				<td>4 person max</td>
 				<td>4 person max</td>
+				<td>4 person max</td>
 			</tr>
 			<tr>
 			  <td>Trips to corvo</td>
+			  <td>X</td>
 			  <td>X</td>
 			  <td>&check;</td>
 			  <td>Custom</td>
@@ -162,10 +166,12 @@ select::placeholder {
 			  <td>Sailing around the island</td>
 			  <td>&check;</td>
 			  <td>&check;</td>
+			  <td>&check;</td>
 			  <td>Custom</td>
 			</tr>
 			<tr>
 				<td>Snorkeling & Coastal Approach with dinghy</td>
+				<td>X</td>
 				<td>&check;</td>
 				<td>&check;</td>
 				<td>Custom</td>
@@ -175,16 +181,19 @@ select::placeholder {
 					<td>&check;</td>
 					<td>&check;</td>
 					<td>&check;</td>
+					<td>&check;</td>
 				</tr>
 			<tr>
 			  <td>Meals Included</td>
 			  <td>Lunch & Snacks</td>
+			  <td>Lunch, Dinner & Snacks</td>
 			  <td>Lunch, Dinner & Snacks</td>
 			  <td>Breakfast, Lunch, Dinner & Snacks</td>
 			</tr>
 			<tr>
 				<td>TOTAL PRICE</td>
 				<td>80&euro;/Person at Full Capacity</td>
+				<td>100&euro;/Person at Full Capacity</td>
 				<td>130&euro;/Person at Full Capacity</td>
 				<td>Call or text <b>(+351) 927 916 990</b> to get your customized quote</td>
 			</tr>
@@ -224,6 +233,7 @@ select::placeholder {
 		  </div>
           <div class="form-row">
             <label for="people">Number of People (4 PERSON MAX):</label>
+			<p>Sunset Plan can have up to 5 person max</p>
             <div class="quantity-picker">
               <input name="people-count" type="number" id="people" min="1" max="4" value="0" required>
             </div>
