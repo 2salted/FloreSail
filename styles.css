@@ -40,7 +40,9 @@
 	color: #fff;
 	text-align: center;
   }
-
+  #header22 {
+	background-image: url(pictures/IMG_4741.JPG);
+  }
   .sticky {
 	position: fixed;
 	bottom: 100px;
@@ -647,10 +649,12 @@ div .WhatsApp {
   }
   
 
-
-
-
-
+  @media (min-width: 767px) {
+	nav li a {
+		color: white;
+	}
+  }
+  
   /*Test code*/
   /* Styling for the pricing table */
 .pricing-table {

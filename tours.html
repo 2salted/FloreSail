@@ -58,7 +58,15 @@ button {
 .form-row {
   margin-bottom: 20px;
 }
-
+#extra-questions {
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	border: 0.8px solid #aaa;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #333;
+}
 label {
   display: block;
   font-weight: bold;
@@ -98,8 +106,9 @@ select:-ms-input-placeholder {
 select::placeholder {
   color: #aaa;
 }
-
-
+#olol1 {
+	margin-top: 12px;
+}
 </style>
 <body>
 	<nav>
@@ -109,7 +118,7 @@ select::placeholder {
 			<li><a href="./About.html">About Us</a></li>
 		</ul>
 	</nav>
-	<header>
+	<header id="header22">
 		<a href="#" target="_blank">
 			<img class="logo" src="pictures/official flores logo.png" >
 		</a>
@@ -137,7 +146,6 @@ select::placeholder {
 			  <th>Sunset plan</th>
 			  <th>Full Day plan</th>
 			  <th>Flores & Corvo plan</th>
-			  <th>Customizable plan</th>
 			</tr>
 		  </thead>
 		  <tbody>
@@ -146,12 +154,10 @@ select::placeholder {
 			  <td>4 Hours</td>
 			  <td>1 Full Day</td>
 			  <td>1-2 Full Days</td>
-			  <td>1-3 Full Days</td>
 			</tr>
 			<tr>
 				<td>Max Capacity</td>
 				<td>5 person max</td>
-				<td>4 person max</td>
 				<td>4 person max</td>
 				<td>4 person max</td>
 			</tr>
@@ -160,33 +166,34 @@ select::placeholder {
 			  <td>X</td>
 			  <td>X</td>
 			  <td>&check;</td>
-			  <td>Custom</td>
 			</tr>
 			<tr>
 			  <td>Sailing around the island</td>
 			  <td>&check;</td>
 			  <td>&check;</td>
 			  <td>&check;</td>
-			  <td>Custom</td>
 			</tr>
 			<tr>
 				<td>Snorkeling & Coastal Approach with dinghy</td>
-				<td>X</td>
 				<td>&check;</td>
 				<td>&check;</td>
-				<td>Custom</td>
+				<td>&check;</td>
+				</tr>
+				<tr>
+					<td>Anchorage in beautiful bays</td>
+					<td>&check;</td>
+					<td>&check;</td>
+					<td>&check;</td>
 				</tr>
 				<tr>
 					<td>Eligibility for coastal cleanup discount</td>
-					<td>&check;</td>
-					<td>&check;</td>
+					<td>X</td>
 					<td>&check;</td>
 					<td>&check;</td>
 				</tr>
 			<tr>
 			  <td>Meals Included</td>
 			  <td>Lunch & Snacks</td>
-			  <td>Lunch, Dinner & Snacks</td>
 			  <td>Lunch, Dinner & Snacks</td>
 			  <td>Breakfast, Lunch, Dinner & Snacks</td>
 			</tr>
@@ -195,7 +202,6 @@ select::placeholder {
 				<td>80&euro;/Person at Full Capacity</td>
 				<td>100&euro;/Person at Full Capacity</td>
 				<td>130&euro;/Person at Full Capacity</td>
-				<td>Call or text <b>(+351) 927 916 990</b> to get your customized quote</td>
 			</tr>
 		  </tbody>
 		</table>
@@ -226,7 +232,8 @@ select::placeholder {
 			<label for="row-picker">Select your Plan:</label>
       <select id="row-picker" name="Plan select" required>
         <option value="none selected" disabled selected>Select a Plan...</option>
-        <option value="Full day sunset plan">Full day sunset plan</option>
+        <option value="Sunset plan">Sunset plan</option>
+		<option vlaue="Full Day">Full Day</option>
         <option value="Flores & Corvo plan">Flores & Corvo plan</option>
 		<option value="Customizable plan">Customizable plan</option>
       </select>
@@ -237,6 +244,10 @@ select::placeholder {
             <div class="quantity-picker">
               <input name="people-count" type="number" id="people" min="1" max="4" value="0" required>
             </div>
+			<div class="form-row">
+				<label id="olol1" for="extra-questions">Extra Questions or Comments:</label>
+				<textarea id="extra-questions" name="extra-questions" placeholder="Enter any additional questions or comments"></textarea>	
+			</div>
           </div>
           <button id="submit1" type="submit">Send</button>
         </form>
@@ -293,8 +304,8 @@ select::placeholder {
     var value = parseInt(peopleInput.value);
     if (isNaN(value) || value < 1)
       peopleInput.value = 1;
-    else if (value > 4)
-      peopleInput.value = 4;
+    else if (value > 5)
+      peopleInput.value = 5;
   });
 </script>
 </body>
