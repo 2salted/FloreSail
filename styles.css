@@ -649,11 +649,6 @@ div .WhatsApp {
   }
   
 
-  @media (min-width: 767px) {
-	nav li a {
-		color: white;
-	}
-  }
   
   /*Test code*/
   /* Styling for the pricing table */
