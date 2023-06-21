@@ -162,7 +162,7 @@ select::placeholder {
 			</tr>
 			<tr>
 				<td>Max Capacity</td>
-				<td>5 person max</td>
+				<td>4 person max</td>
 				<td>4 person max</td>
 				<td>4 person max</td>
 			</tr>
@@ -174,13 +174,13 @@ select::placeholder {
 			</tr>
 			<tr>
 			  <td>Sailing around the island</td>
-			  <td>&check;</td>
+			  <td>X</td>
 			  <td>&check;</td>
 			  <td>&check;</td>
 			</tr>
 			<tr>
 				<td>Snorkeling & Coastal Approach with dinghy</td>
-				<td>&check;</td>
+				<td>X</td>
 				<td>&check;</td>
 				<td>&check;</td>
 				</tr>
@@ -198,8 +198,8 @@ select::placeholder {
 				</tr>
 			<tr>
 			  <td>Meals Included</td>
-			  <td>Lunch & Snacks</td>
-			  <td>Lunch, Dinner & Snacks</td>
+			  <td>Snacks & Drinks</td>
+			  <td>Lunch, Snacks & Drinks</td>
 			  <td>Breakfast, Lunch, Dinner & Snacks</td>
 			</tr>
 			<tr>
@@ -216,7 +216,7 @@ select::placeholder {
 	  <p id="parabooking-text">For further questions or more info please contact us via email or <a href="https://api.whatsapp.com/send?phone=351927916990&text=I%20am%20in%20the%20Floresail%20website%20and%20I%20have%20a%20couple%20inquiries.">WhatsApp</a></p>
 	  <div class="form-container">
         <h2>Sailing Trip Booking</h2>
-        <form action="https://formsubmit.co/floresail.info@gmail.com" method="POST">
+        <form action="https://formsubmit.co/floresail@hotmail.com" method="POST">
           <div class="form-row">
             <label for="full-name">Full Name:</label>
             <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
@@ -238,14 +238,13 @@ select::placeholder {
       <select id="row-picker" name="Plan select" required>
         <option value="none selected" disabled selected>Select a Plan...</option>
         <option value="Sunset plan">Sunset plan</option>
-		<option vlaue="Full Day">Full Day</option>
+		<option value="Full Day">Full Day</option>
         <option value="Flores & Corvo plan">Flores & Corvo plan</option>
 		<option value="Customizable plan">Customizable plan</option>
       </select>
 		  </div>
           <div class="form-row">
             <label for="people">Number of People (4 PERSON MAX):</label>
-			<p>Sunset Plan can have up to 5 person max</p>
             <div class="quantity-picker">
               <input name="people-count" type="number" id="people" min="1" max="4" value="0" required>
             </div>
@@ -309,8 +308,8 @@ select::placeholder {
     var value = parseInt(peopleInput.value);
     if (isNaN(value) || value < 1)
       peopleInput.value = 1;
-    else if (value > 5)
-      peopleInput.value = 5;
+    else if (value > 4)
+      peopleInput.value = 4;
   });
 </script>
 </body>
