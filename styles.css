@@ -647,7 +647,6 @@ div .WhatsApp {
 	}
 	/* center text in footer */
   }
-  
 
   
   /*Test code*/
@@ -744,3 +743,16 @@ div .WhatsApp {
   #cleanup-text {
 	text-align: center;
   }
+
+  .fblink {
+	position: relative;
+  }
+  
+  .fbimage {
+	width: 50px; /* Adjust the size as desired */
+	height: auto; /* Preserve the aspect ratio */
+	position: relative;
+	top: -40px;
+	left: 0;
+  }
+  
